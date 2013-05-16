@@ -1,58 +1,58 @@
-1) Vous devez avoir déployé la webapp FormsWebAccess de l'AMUE (ce qui
-est le cas si vous utilisez le SSO Oracle). Les Compléments Apogée
+1) Vous devez avoir dÃ©ployÃ© la webapp FormsWebAccess de l'AMUE (ce qui
+est le cas si vous utilisez le SSO Oracle). Les ComplÃ©ments ApogÃ©e
 viennent se greffer dans cette webapp, et utilisent son fichier de
-configuration. Ainsi, aucune configuration supplémentaire n'est nécessaire.
+configuration. Ainsi, aucune configuration supplÃ©mentaire n'est nÃ©cessaire.
 
-2) Dans la webapp FormsWebAccess déployée sur Tomcat, vous devez créer
-un sous-répertoire pour l'application, par exemple "cp1". Vous devez
-extraire le contenu de l'archive jointe à l'intérieur. Il n'y a rien à
+2) Dans la webapp FormsWebAccess dÃ©ployÃ©e sur Tomcat, vous devez crÃ©er
+un sous-rÃ©pertoire pour l'application, par exemple "cp1". Vous devez
+extraire le contenu de l'archive jointe Ã  l'intÃ©rieur. Il n'y a rien Ã 
 configurer.
 
-3) Avec un navigateur, accédez à la page assistance.jsp en spécifiant
+3) Avec un navigateur, accÃ©dez Ã  la page assistance.jsp en spÃ©cifiant
 l'URL correcte, selon votre serveur. La page de recherche doit
 apparaitre. S'il y a une erreur technique, vous devez chercher la cause
 et corriger.
 
-4) Dans le champ de recherche, vous pouvez saisir un code étudiant, un
+4) Dans le champ de recherche, vous pouvez saisir un code Ã©tudiant, un
 indentifiant OPI ou un nom de famille. Cliquez sur Rechercher. Deux
-listes s'affichent en dessous : l'une pour les étudiants inscrits dans
-Apogée, l'autre pour les OPI. Cliquez sur la loupe pour accéder aux détails.
+listes s'affichent en dessous : l'une pour les Ã©tudiants inscrits dans
+ApogÃ©e, l'autre pour les OPI. Cliquez sur la loupe pour accÃ©der aux dÃ©tails.
 
-5) La page de détail d'un étudiant affiche toutes les informations
-utiles sur un étudiant. Si une information semble problématique, elle
-est affichée en rouge. La section "Etapes susceptibles de réinscription"
-est l'une des plus importantes : elle liste les étapes qui sont
-proposées par IA-Réins, avec pour chacune d'elle un diagnostic indiquant
-ce qui pose problème pour une réinscription.
+5) La page de dÃ©tail d'un Ã©tudiant affiche toutes les informations
+utiles sur un Ã©tudiant. Si une information semble problÃ©matique, elle
+est affichÃ©e en rouge. La section "Etapes susceptibles de rÃ©inscription"
+est l'une des plus importantes : elle liste les Ã©tapes qui sont
+proposÃ©es par IA-RÃ©ins, avec pour chacune d'elle un diagnostic indiquant
+ce qui pose problÃ¨me pour une rÃ©inscription.
 
-6) Dans une moindre mesure, la page de détail d'une OPI a des
-fonctionnalités similaires.
+6) Dans une moindre mesure, la page de dÃ©tail d'une OPI a des
+fonctionnalitÃ©s similaires.
 
-7) L'application se connecte à Apogée avec les droits de l'utilisateur
-CAS. Ses paramètres de connexion sont automatiquement récupérés dans
-l'OID Oracle. A nouveau, il n'y a aucune configuration supplémentaire à
+7) L'application se connecte Ã  ApogÃ©e avec les droits de l'utilisateur
+CAS. Ses paramÃ¨tres de connexion sont automatiquement rÃ©cupÃ©rÃ©s dans
+l'OID Oracle. A nouveau, il n'y a aucune configuration supplÃ©mentaire Ã 
 faire.
 
-8) Par défaut, l'application se connecte sur la première configuration
-activable qui est définie dans le fichier de configuration de votre
-FormsWebAccess. Losque vous allez sur une page de détails, vous pouvez
-voir le paramètre config=... dans l'URL. Vous pouvez manuellement
-remplacer sa valeur par un autre nom de configuration présent dans le
+8) Par dÃ©faut, l'application se connecte sur la premiÃ¨re configuration
+activable qui est dÃ©finie dans le fichier de configuration de votre
+FormsWebAccess. Losque vous allez sur une page de dÃ©tails, vous pouvez
+voir le paramÃ¨tre config=... dans l'URL. Vous pouvez manuellement
+remplacer sa valeur par un autre nom de configuration prÃ©sent dans le
 fichier de configuration de votre FormsWebAccess, par exemple apoprod,
 apotest, etc.
 
-9) En option, la page de détail d'un étudiant peut aussi afficher les
-informations contenues dans l'annuaire LDAP de votre établissement.
+9) En option, la page de dÃ©tail d'un Ã©tudiant peut aussi afficher les
+informations contenues dans l'annuaire LDAP de votre Ã©tablissement.
 Normalement, cela devrait fonctionner sans trop de mal si votre annuaire
-LDAP est à la norme SUPANN. Comme cela nécessite quelques adaptations,
-j'ai désactivé cette option. Si vous souhaitez l'essayer, dans  le
+LDAP est Ã  la norme SUPANN. Comme cela nÃ©cessite quelques adaptations,
+j'ai dÃ©sactivÃ© cette option. Si vous souhaitez l'essayer, dans  le
 fichier functions_ldap.jsp vous devez renseigner la variable
-LDAP_PARIS1_URL avec l'URL du serveur LDAP de votre université. A
-plusieurs endroits, vous devez remplacer les noms des éléments par ceux
-de votre université. Ensuite, dans detail_etudiant.jsp, vous pouvez
-décommenter le bloc "Informations LDAP / ENT / Malix".
+LDAP_PARIS1_URL avec l'URL du serveur LDAP de votre universitÃ©. A
+plusieurs endroits, vous devez remplacer les noms des Ã©lÃ©ments par ceux
+de votre universitÃ©. Ensuite, dans detail_etudiant.jsp, vous pouvez
+dÃ©commenter le bloc "Informations LDAP / ENT / Malix".
 
-10) De même, dans detail_etudiant.jsp, le bloc "Cartes d'étudiant dans
-Uni'Campus" est commenté. Il permet d'afficher les informations sur les
-cartes d'étudiant, mais il y a peu de chances que cela fonctionne
-ailleurs qu'à Paris 1.
+10) De mÃªme, dans detail_etudiant.jsp, le bloc "Cartes d'Ã©tudiant dans
+Uni'Campus" est commentÃ©. Il permet d'afficher les informations sur les
+cartes d'Ã©tudiant, mais il y a peu de chances que cela fonctionne
+ailleurs qu'Ã  Paris 1.
