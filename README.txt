@@ -1,4 +1,4 @@
-Compléments JSP pour l'application Apogée de l'AMUE.
+Compléments Paris 1 pour l'application Apogée de l'AMUE.
 Copyright (C) 2013 Université Paris 1 Panthéon-Sorbonne
 https://github.com/vinriviere/complements-apogee/
 
