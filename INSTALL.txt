@@ -5,7 +5,7 @@ configuration. Ainsi, aucune configuration supplémentaire n'est nécessaire.
 
 2) Dans la webapp FormsWebAccess déployée sur Tomcat, vous devez créer
 un sous-répertoire pour l'application, par exemple "cp1". Vous devez
-extraire le contenu de l'archive jointe à l'intérieur. Il n'y a rien à
+copier le contenu du répertoire "jsp" à l'intérieur. Il n'y a rien à
 configurer.
 
 3) Avec un navigateur, accédez à la page assistance.jsp en spécifiant
