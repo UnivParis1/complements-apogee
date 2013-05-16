@@ -179,17 +179,17 @@ private static void printDayTdTag(JspWriter out, java.util.Date date, boolean fa
 %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title><%=htmlEncode(nom + " " + cod_etu)%></title>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title><%=htmlEncode(nom + " " + cod_etu)%></title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<script type="text/javascript" src="scripts.js"></script>
-    </head>
-    <body>
+	</head>
+	<body>
 <%
 		if (!etudiantTrouve) {
 %>	
-        <h1><%=htmlEncode(getApplicationPageTitle(properties, con, "Etudiant " + cod_etu + " inexistant"))%></h1>
+		<h1><%=htmlEncode(getApplicationPageTitle(properties, con, "Etudiant " + cod_etu + " inexistant"))%></h1>
 <%
 		}
 		else {
@@ -197,7 +197,7 @@ private static void printDayTdTag(JspWriter out, java.util.Date date, boolean fa
 		<table width="100%" cellpadding="0" cellspacing="0">
 			<tr>
 				<td>
-        <h1><%=htmlEncode(getApplicationPageTitle(properties, con, "Détail étudiant " + nom + " " + prenom))%></h1>
+		<h1><%=htmlEncode(getApplicationPageTitle(properties, con, "Détail étudiant " + nom + " " + prenom))%></h1>
 		<h2>Informations personnelles</h2>
 		<!-- COD_IND = <%=cod_ind%> -->
 <%

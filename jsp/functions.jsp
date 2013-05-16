@@ -430,7 +430,7 @@ private static int printResultSet(JspWriter out, ResultSet rs, HtmlTableRenderer
 	out.println("</tr>");
 
 	// Data
-    int count = 0;
+	int count = 0;
 	while (rs.next() && (limit < 0 || count < limit)) {
 		renderer.beforeRenderRow(rs);
 
@@ -440,12 +440,12 @@ private static int printResultSet(JspWriter out, ResultSet rs, HtmlTableRenderer
 		}
 		out.println("</tr>");
 
-        ++count;
+		++count;
 	}
 
 	out.println("</table>");
 
-    return count;
+	return count;
 }
 
 private static int printResultSet(JspWriter out, ResultSet rs, HtmlTableRenderer renderer, int limit) throws IOException, SQLException {

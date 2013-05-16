@@ -80,7 +80,7 @@ private static class EtapesPremiereInscriptionRenderer extends StandardHtmlTable
 	Statement stmt;
 	ResultSet rs = null;
 	Properties properties = getApplicationProperties();
-    String config2 = getConfig(properties, request);
+	String config2 = getConfig(properties, request);
 	Connection con = getConnection(request);
 	try {
 		stmt = con.createStatement();
@@ -109,22 +109,22 @@ private static class EtapesPremiereInscriptionRenderer extends StandardHtmlTable
 %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title><%=htmlEncode(nom + " " + cod_opi_int_epo)%></title>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title><%=htmlEncode(nom + " " + cod_opi_int_epo)%></title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<script type="text/javascript" src="scripts.js"></script>
-    </head>
-    <body>
+	</head>
+	<body>
 <%
 		if (!etudiantTrouve) {
 %>	
-        <h1><%=htmlEncode(getApplicationPageTitle(properties, con, "OPI " + cod_opi_int_epo + " inexistante"))%></h1>
+		<h1><%=htmlEncode(getApplicationPageTitle(properties, con, "OPI " + cod_opi_int_epo + " inexistante"))%></h1>
 <%
 		}
 		else {
 %>	
-        <h1><%=htmlEncode(getApplicationPageTitle(properties, con, "Détail OPI " + nom + " " + prenom))%></h1>
+		<h1><%=htmlEncode(getApplicationPageTitle(properties, con, "Détail OPI " + nom + " " + prenom))%></h1>
 		<h2>Informations personnelles</h2>
 		<!-- COD_IND_OPI = <%=cod_ind_opi%> -->
 <%

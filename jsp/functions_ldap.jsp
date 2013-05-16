@@ -189,7 +189,7 @@ private static void ldapGroupUserRemove(DirContext rootContextParis1, String gro
 	if (ldapExistsAttributeValue(rootContextParis1, groupDN, attrID, value))
 		ldapRemoveAttributeValue(rootContextParis1, groupDN, attrID, value);
 }
-    
+	
 private static String getDnParis1() {
 	return "dc=univ-paris1,dc=fr";
 }

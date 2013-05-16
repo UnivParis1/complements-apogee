@@ -62,14 +62,14 @@ private static class MyRenderer extends StandardHtmlTableRenderer {
 %>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title><%= htmlEncode(pageTitle)%></title>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title><%= htmlEncode(pageTitle)%></title>
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		<script type="text/javascript" src="scripts.js"></script>
-    </head>
-    <body>
-        <h1><%= htmlEncode(pageTitle)%></h1>
+	</head>
+	<body>
+		<h1><%= htmlEncode(pageTitle)%></h1>
 		<p class="description">
 			Cette page permet de rechercher un étudiant dans Apogée pour aider à la résolution des problèmes d'inscriptions.
 		</p>
