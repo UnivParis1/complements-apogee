@@ -6,7 +6,7 @@ Auteur :
 Vincent Rivière <Vincent.Riviere@univ-paris1.fr>
 
 Ce logiciel est distribué sous licence GPLv3.
-Voir le fichier license.txt pour les détails.
+Voir le fichier LICENSE.txt pour les détails.
 
 Vous êtes libres d'utiliser ce logiciel sans restriction, et sans garantie.
 Vous êtes autorisés à redistribuer ce logiciel, avec ou sans modification,
@@ -21,3 +21,5 @@ manière synthétique, en effectuant des contrôles de cohérence.
 
 Voir présentation complète ici :
 http://www.amue.fr/fileadmin/amue/formation-vie-etudiant/rof/1bis-CLUBU2012_Complements_ApogeeJSP_PARIS1.pdf
+
+Pour l'installation, voir le fichier INSTALL.txt.
